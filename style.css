@@ -2,7 +2,7 @@
 
 /*ページ全体のCSS*/
 body {
-  background-image: url(../images/bg_600.jpg);/*背景画像*/
+  background-image: url(../bg_600.jpg);/*背景画像*/
   font-size: 16px;/*ページ全体のフォント*/
   font-family: 'arial','Hiragino Sans','Meiryo',sans-serif;
   color: #333333;
@@ -139,7 +139,7 @@ article h3 {
   margin-bottom: 20px;/*下の余白*/
   font-size: 38px;/*文字サイズ28→32*/
   font-weight: 600;/*文字の太さ*/
-  background-image: url(../images/h2_icon.png);/*見出しの先頭にアイコン*/
+  background-image: url(../h2_icon.png);/*見出しの先頭にアイコン*/
   background-repeat: no-repeat;/*繰り返さない*/
   background-position: left bottom;/*アイコンの位置*/
   padding: 20px 10px 10px 80px;/*余白の調整48→80*/
