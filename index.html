@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>RGBLED 117</title>
+  </head>
+  <body>
+    <header><!--ヘッダー-->
+      <h1><img src="images/FarmShuichi_500.png" alt="基板だけのカラー模様"></h1>
+      <nav><!--グローバルナビゲーション-->
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <!--<li><a href="#">ABOUT</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">SHOP</a></li>-->
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <main><!--メインエリア-->
+        <article><!--記事エリア-->
+          <h2><i class="fa-solid fa-otter my_kawauso fa-spin"></i> Shuichi-Yのプログラム <i class="fa-solid fa-feather-pointed my_hane1 fa-flip"></i></h2>
+          <p class="postdate">
+            <time datetime="2022-05-28T12:00"><!--投稿日時-->
+              2022年5月28日12時00分
+            </time>
+          </p>
+          <p class="eyecatch">
+            <img src="images/moyou.png" alt="RGBLEDで模様の点灯">
+          </p>
+          <section><!--セクションエリア１-->
+            <h3>yt_shuichi09の説明</h3>
+            <p>このプログラムは、ArduinoでRGBLEDの117個を点灯制御するプログラムです</p>
+            <p>点灯内容</p>
+            <ul>
+              <li>スイッチ１：模様の点灯後に、本日ノオススメ品サザエの文字*1</li>
+              <li>スイッチ２：暗い白</li>
+              <li>スイッチ３：明るい白</li>
+              <li>スイッチ４：赤</li>
+              <li>スイッチ５：点滅の赤</li>
+              <li>*1. 本日ノオススメ品の文字は左から現れます。真中で止まり次の文字に変わります。<br>サザエの文字はLEDが1個づつ点灯し文字を作成します。</li>
+            </ul>
+            <figure><!--投稿内の画像-->
+              <img src="images/sazae.png" alt="サザエのザの字の点灯">
+              <figcaption>濁点の関係で横の数量は９個です</figcaption><!--画像の説明文-->
+            </figure>
+          </section>
+          <section><!--セクションエリア２-->
+            <h3>yt_shu10の説明</h3>
+            <p>このプログラムは、RGBLEDの文字が左から現れて右に消えていく制御です</p>
+            <ol>
+              <li>（１）Excelのシートのセルに文字を作成 *2</li>
+              <li>（２）プログラムを実行 → RGBLEDを制御するデータ出力</li>
+              <li>（３）データをメモ帳などにコピー</li>
+              <li>（４）２つ目の文字の１文字を作成する</li>
+              <li>（５）プログラムを実行 → RGBLEDを制御するデータ出力 *3</li>
+              <li>（６）データを１文字目のデータに挿入する *4</li>
+              <li>（７）３つ目の文字以降は、（４）～（６）を繰り返す</li>
+              <li>*2. 横９マスと縦１３マスに〇と●で１文字 (漢字など) を作成する</li>
+              <li>*3. LEDの点灯の色を変更しない時は省略<br>LEDの点灯の色を変更したい場合はメモ帳でテキストの置換をする<br>例：red → green</li>
+              <li>*4. 次の文字挿入_1の場所から順番に挿入していく</li>
+            </ol>
+            <figure><!--投稿内の画像-->
+              <img src="images/Excel_1.png" alt="Excelで文字の作成">
+              <figcaption>「宜しく」の宜の字をExcelで作成</figcaption><!--画像の説明文-->
+            </figure>
+          </section>
+        </article>
+      </main>
+      <aside><!--補足情報エリア／サイドバー-->
+        <nav class="categoryNav"><!--ローカルナビゲーション-->
+          <h2>Category <i class="fa-solid fa-skull my_gaikotu fa-beat-fade"></i> (制作中)</h2><!--種類・ジャンル-->
+          <p>文字の点灯内容</p>
+          <ul>
+            <li><a href="#">営業中</a></li>
+            <li><a href="#">工事中</a></li>
+            <li><a href="#">正常・異常</a></li>
+            <li><a href="#">宜しく</a></li>
+          </ul>
+        </nav>
+        <nav class="recentNav"><!--ローカルナビゲーション-->
+          <h2>Recent Articles</h2><!--最近の記事-->
+          <ul>
+            <li>LED基板設計<br> ＊HomePageの写真</li>
+            <li>ハードのサンプル制作<br> ＊HomePageの写真</li>
+            <li>Arduino用softのwhile studying<br>＊GitHub yt_shuichi09</li>
+            <li>Pythonのwhile studying<br>＊GitHub yt_shu10</li>
+            <li>HTML/CSSのwhile studying<br>＊Github Pages HomePage</li>
+            <li>CONTACTは思考中です<br>お気軽にお問い合わせ下さい!!<br>✉ mashu373s@gmail.com<br>✉でお願いします。</li>
+          </ul>
+        </nav>
+        <p>
+          <a href="#"><img src="images/side_banner.jpg" alt="RGBLEDの制作物"></a><!--変更png→jpg-->
+        </p>
+      </aside>
+    </div>
+    <footer><!--フッター-->
+      <p><small>© 2022 Shuichi-Y</small></p><!--著作権情報-->
+    </footer>
+  </body>
+</html>
