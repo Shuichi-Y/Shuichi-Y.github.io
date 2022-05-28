@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/*ページ全体のCSS*/
+body {
+  background-image: url(../images/bg_600.jpg);/*背景画像*/
+  font-size: 16px;/*ページ全体のフォント*/
+  font-family: 'arial','Hiragino Sans','Meiryo',sans-serif;
+  color: #333333;
+}
+/*ヘッダーのCSS*/
+header {
+  width: 1240px;/*変更1240→2000*/
+  margin: 0 auto 44px;/*中央寄せ*/
+}
+/*ロゴの中央寄せ*/
+h1 {
+  text-align: center;
+  padding: 20px 0px 16px;/*上下の余白*/
+}
+/*グローバルナビゲーションのCSS*/
+header nav ul {
+  display: flex;/*横並び*/
+  justify-content: center;/*中央寄せ*/
+  border-top: 2px solid #7c5d48;/*ナビゲーションの装飾*/
+  border-bottom: 2px solid #7c5d48;
+  background-color: rgba(255,255,255,0.42);
+  padding: 12px 0px 10px;
+}
+/*ナビゲーション項目の余白*/
+header nav ul li {
+  margin: 0 20px;
+}
+/*ナビゲーション項目の文字の装飾*/
+header nav ul li a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5d48;
+}
+/*カーソルをあてた時の装飾*/
+header nav ul li a:hover {
+  text-decoration: underline double;
+}
+/*main要素とaside要素が子要素*/
+div {
+  width: 1240px;/*ヘッダーエリアに合わせる*/
+  margin: 0 auto 50px;
+  display: flex;/*メインエリアとサイドバーを横並び*/
+  justify-content: space-between;/*メインエリアとサイドバーの間に余白*/
+}
+/*メインエリアとサイドバーの横幅を指定*/
+main {
+  flex-basis: 920px;
+  background-color: #ffffff;/*白背景*/
+  border-radius: 16px;/*メインエリアのボックスを装飾・角丸*/
+  padding: 62px 72px 32px 72px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.16);/*ボックスの影*/
+}
+aside {
+  flex-basis: 284px;
+}
+/*サイドバーの装飾*/
+aside nav {
+  border-radius: 16px;/*角丸*/
+  background-color: #ffffff;/*白背景*/
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.16);/*ボックスの影*/
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+/*サイドバーの見出しを装飾*/
+aside nav h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #7c5d48;
+}
+/*サイドバーの文字サイズを変更*/
+aside nav ul {
+  font-size: 14px;
+}
+.my_gaikotu {color: gray; font-size: 0.8em;}
+/*categoryナビゲーションの装飾*/
+.categoryNav ul li {
+  list-style-type: square;/*リストのマーカを四角*/
+  color: #7c5d48;
+  margin: 0 0 16px 20px;/*項目間の余白*/
+}
+/*文字色を黒に戻す*/
+.categoryNav ul li a {
+  color: #333333;
+}
+/*追加*/
+.categoryNav p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #333333;
+}
+/*recentナビゲーションの装飾*/
+.recentNav ul li {
+  border-bottom: 1px solid #7c5d48;/*ボーダーと余白を調整*/
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+}
+/*コンテンツの表示方法を変更*/
+.recentNav ul {
+  height: 240px;/*高さ指定*/
+  overflow: hidden scroll;/*指定の高さを超える部分はスクロール*/
+}
+/*記事エリアを装飾*/
+/*Font Awesomeの色とサイズ*/
+.my_kawauso {color: blueviolet;font-size: 1em;}
+.my_hane1 {color: red; font-size: 1em;}
+/*タイトルの文字を大きく*/
+article h2 {
+  font-size: 58px;/*文字サイズ40→58*/
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+/*投稿日時を装飾*/
+time {
+  background-color: #91c777;/*背景色*/
+  border-radius: 0px 22px 22px 22px;/*角丸*/
+  font-size: 18px;/*文字の装飾*/
+  font-weight: bold;
+  color: #ffffff;
+  padding: 13px 25px 12px 20px;/*内側の余白*/
+  display: inline-block;/*time要素のインラインボックスをインラインブロックに変更*/
+}
+/*p要素にclass属性を追加して余白を調整*/
+.postdate {
+  margin-bottom: 26px;
+}
+/*class属性を追加してアイキャッチ画像を装飾*/
+.eyecatch {
+  margin-bottom: 26px;/*余白を調整*/
+}
+/*記事の見出しを装飾*/
+article h3 {
+  border-bottom: 2px solid #6ab547;/*ボーダー*/
+  margin-bottom: 20px;/*下の余白*/
+  font-size: 38px;/*文字サイズ28→32*/
+  font-weight: 600;/*文字の太さ*/
+  background-image: url(../images/h2_icon.png);/*見出しの先頭にアイコン*/
+  background-repeat: no-repeat;/*繰り返さない*/
+  background-position: left bottom;/*アイコンの位置*/
+  padding: 20px 10px 10px 80px;/*余白の調整48→80*/
+}
+/*文章 (本文) を装飾*/
+article section p {
+  line-height: 1.6;/*行間を調整*/
+  margin-bottom: 6px;/*段落の間隔24→12*/
+  font-size: 20px;/*追加*/
+}
+/*文章 (本文) の箇条書きを装飾・追加*/
+article section ul {
+  line-height: 2.2;/*行間を調整1.6→2.2*/
+  margin-bottom: 6px;/*段落の間隔24→6*/
+  font-size: 18px;/*追加*/
+}
+/*文章 (本文) の箇条書きを装飾・追加*/
+article section ol {
+  line-height: 2.2;/*行間を調整1.6→2.2*/
+  margin-bottom: 6px;/*段落の間隔24→6*/
+  font-size: 18px;/*追加*/
+}
+/*セクションの余白を調整*/
+article section {
+  margin-bottom: 50px;
+}
+/*フッターエリアを装飾*/
+footer {
+  background-color: #523f2e;/*背景色*/
+  color: #ffffff;/*文字色*/
+  text-align: center;/*テキストを中央*/
+  padding: 14px 10px 20px;/*内側の余白*/
+}
